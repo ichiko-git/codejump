@@ -1,0 +1,193 @@
+@charset "utf-8";
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  color: #707070;
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #707070;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ヘッダー */
+#header {
+  display: flex;
+  justify-content: space-between;
+  /* height: 96px; */
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+#header .logo {
+  max-width: 190px;
+  line-height: 0;
+}
+
+#header .logo a {
+  display: block;
+}
+
+#header .navi {
+  display: flex;
+  align-items: center;
+}
+
+#header .navi li {
+  margin-left: 40px;
+}
+
+/* イントロダクション */
+.introduction {
+  margin-top: 80px;
+  text-align: center;
+}
+.introduction .introduction-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+.introduction .introduction-text {
+  margin-top: 40px;
+}
+
+/* Profile */
+.section-title {
+  font-weight: normal;
+}
+.section-title .en {
+  display: block;
+  font-size: 40px;
+}
+.section-title .ja {
+  display: block;
+  font-size: 14px;
+}
+
+#profile {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+#profile .profile-content {
+  width: 50%;
+  padding-left: 80px;
+}
+#profile .profile-text {
+  margin-top: 40px;
+  line-height: 2;
+}
+#profile .profile-image {
+  width: 50%;
+}
+
+/* Works */
+#works {
+  margin-top: 120px;
+}
+#works .works-items {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#works .works-items .works-item {
+  width: 32%;
+  margin: 0 2% 2% 0;
+}
+#works .works-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* フッター */
+#footer {
+  margin-top: 120px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* スマートフォン用 */
+@media screen and (max-width: 767px) {
+  /* ヘッダー */
+  #header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  #header .logo {
+    max-width: 120px;
+  }
+
+  /* イントロダクション */
+  .introduction {
+    margin-top: 50px;
+  }
+  .introduction .introduction-title {
+    font-size: 16px;
+  }
+  .introduction .introduction-text {
+    text-align: left;
+  }
+
+  /* Profile */
+  .section-title .en {
+    font-size: 32px;
+  }
+
+  #profile {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  #profile .profile-content {
+    width: 100%;
+    padding-left: 0;
+  }
+  #profile .profile-text {
+    margin-top: 25px;
+  }
+  #profile .profile-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* Works */
+  #works {
+    margin-top: 60px;
+  }
+  #works .works-items {
+    /* flex-wrap: nowrap; */
+    flex-direction: column;
+  }
+  #works .works-items .works-item {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+
+  /* フッター */
+  #footer {
+    margin-top: 60px;
+  }
+}
